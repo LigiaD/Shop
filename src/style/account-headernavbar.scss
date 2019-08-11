@@ -1,0 +1,82 @@
+
+
+
+.account-header {
+
+    background-image: url(/photos/snow.jpg);
+    background-size: cover;
+    display: grid;
+    grid-row: header-s/header-e;
+    grid-column: 1/-1;
+   
+    grid-template-rows: 1fr;
+   grid-template-columns: [text-s] 80% [text-e links-s] 20% [links-e] ;
+    &__text {
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        grid-column: text-s/text-e;
+        font-size: 35px;
+     
+     
+        font-family: $main-font;
+        color: $navbar-color;
+        -webkit-text-stroke-color: $navbar-hover;
+        -webkit-text-stroke-width: 0.4px;
+        font-weight: 700;
+    }
+
+    &__links {
+        
+        grid-row: 1/-1;
+        grid-column: links-s/links-e;
+        align-self: flex-end;
+        justify-self: end;
+        margin-bottom: 8px;
+
+        & > * {
+         grid-row: s/e;
+            
+        }
+       font-family: $main-font;
+        color: $navbar-color;
+        -webkit-text-stroke-color: $navbar-hover;
+        -webkit-text-stroke-width: 0.5px;
+        font-weight: 200;
+        font-size: 20px;
+    }
+
+    &__link {
+        padding-right: 20px;
+    }
+}
+
+.green-text {
+    color: $navbar-hover !important;
+    font-size: 25px;
+}
+
+
+.account-navbar {
+   
+    grid-row: navbar-s/navbar-e;
+    grid-column: 1/-1;
+    background-color: $navbar-color;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+
+    display: grid;
+    grid-template-rows: [s] 1fr [e];
+    align-items: center;
+    justify-content: center;
+    grid-column-gap: 40px;
+
+    color: #E6E6E6;
+    
+    font-size: 18px;
+    font-weight: normal;
+
+
+    & > * {
+        grid-row: s/e;
+    }
+}

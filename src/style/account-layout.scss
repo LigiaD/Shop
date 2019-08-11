@@ -1,0 +1,6 @@
+.account-layout {
+    display: grid;
+    grid-template-rows: [header-s] 20vh [header-e navbar-s] 50px [navbar-e content-s] 1fr [content-e];
+    grid-template-columns: minmax(20px, 250px) [s] 1fr [e] minmax(20px, 250px);
+    background-color: $background-color;
+}

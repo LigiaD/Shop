@@ -1,0 +1,287 @@
+
+.sign-up {
+    background-image: url(/photos/cycling.jpg);
+    background-position: left;
+    //background-attachment: fixed;
+    width: 100%;
+    // height: 100vh;
+    margin: 0;
+    position: absolute;
+    background-size: cover;
+    display: block;
+}
+
+
+.sign-up {
+    
+    // opacity: 0.7;
+    grid-row: content-s/content-e;
+    grid-column: s/e;
+    padding-left: 10%;
+    
+
+    &__page-title {
+        // margin-top: 30px;
+    }
+
+    &__form {
+        position: relative;
+        display: grid;
+        grid-template-rows: [name-s] 64px [name-e email-s] 64px [email-e space-s] 5px [space-e password-s] 64px [password-e confirm-s] 4px [confirm-e] minmax(20px, 81px) [buttons-s] 18px [buttons-e] 20px;
+        grid-template-columns: [back-s] 137px [back-e space-s] 40px [space-e create-s] 1fr [create-e] 1fr;
+        grid-row-gap: 15px;
+    }
+
+}
+.sign-up-form {
+
+   & > * {
+    grid-column: 1/-1;
+
+   }
+   
+   &__name {
+        grid-row: name-s/name-e;
+    }
+
+    &__email {
+        grid-row: email-s/email-e;
+    }
+    &__password {
+        
+        grid-row: password-s/password-e;
+    }
+    
+    &__confirm {
+        
+        grid-row: confirm-s/confirm-e;
+    }
+
+    &__login {
+        
+        grid-row: buttons-s/buttons-e;
+        grid-column: create-s/create-e;
+        
+    }
+    &__back {
+        grid-row: buttons-s/buttons-e;
+        grid-column: back-s/back-e;
+    }
+}
+
+@media (min-width: 200px) {
+    .sign-up {
+        background-image: url(/photos/cycling.jpg);
+        background-position: center center;
+        background-size: cover;
+        width: 100%;
+       
+       
+        margin: 0;
+        position: absolute;
+        
+        display: block;
+
+        &__form {
+            position: relative;
+            display: grid;
+            grid-template-rows: [name-s] 64px [name-e email-s] 64px [email-e space-s] 5px [space-e password-s] 64px [password-e confirm-s] 4px [confirm-e] 35px [back-s] 38px [back-e login-s] 38px [login-e] 20px;
+            grid-row-gap: 15px;
+        }
+    }
+    
+    
+        .sign-up-form {
+    
+            &__back {
+                grid-row: back-s/back-e;
+                
+            }
+    
+            &__login {
+                grid-row: login-s/login-e;
+                align-items: left;
+                grid-column: 1/-1;
+    
+            }
+        }
+    }
+
+    
+    @media (min-width: 455px) {
+    .sign-up {
+    background-image: url(/photos/cycling.jpg);
+    background-position: center center;
+    width: 100%;
+    top:0;
+    left: 0;
+    position: absolute;
+    background-size: cover;
+    display: block;
+    }
+
+}
+    
+    @media (min-width: 720px) {
+    .sign-up {
+    background-image: url(/photos/cycling.jpg);
+    background-position: center center;
+    width: 100%;
+    top:0;
+    left: 0;
+    position: absolute;
+    background-size: cover;
+    display: block;
+
+    &__form {
+        position: relative;
+        display: grid;
+        grid-template-rows: [name-s] 64px [name-e email-s] 64px [email-e space-s] 5px [space-e password-s] 64px [password-e confirm-s] 4px [confirm-e] minmax(20px, 81px) [buttons-s] 18px [buttons-e] 20px;
+        grid-template-columns: [back-s] 137px [back-e space-s] 40px [space-e create-s] 1fr [create-e] 1fr;
+        grid-row-gap: 15px;
+    }
+
+}
+.sign-up-form {
+
+   & > * {
+    grid-column: 1/-1;
+
+   }
+   
+   &__name {
+        grid-row: name-s/name-e;
+    }
+
+    &__email {
+        grid-row: email-s/email-e;
+    }
+    &__password {
+        
+        grid-row: password-s/password-e;
+    }
+    
+    &__confirm {
+        
+        grid-row: confirm-s/confirm-e;
+    }
+
+    &__login {
+        
+        grid-row: buttons-s/buttons-e;
+        grid-column: create-s/create-e;
+        
+    }
+    &__back {
+        grid-row: buttons-s/buttons-e;
+        grid-column: back-s/back-e;
+    }
+    }
+}
+    
+    
+    @media (min-width: 980px) {
+    .sign-up {
+    background-image: url(/photos/cycling.jpg);
+    background-position: center bottom 25%;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    position: absolute;
+    background-size: cover;
+    display: block;
+ 
+
+    &__form {
+        position: relative;
+        display: grid;
+        grid-template-rows: [name-s password-s ] 64px [name-e password-e email-s confirm-s] 64px [email-e confirm-e] 25px [buttons-s] 18px [buttons-e] 20px;
+        grid-row-gap: 15px;
+    }
+    .sign-up-form {  
+        display: grid;
+        grid-template-columns: [register-s] 50% [register-e pass-s] 50% [pass-e];
+        &__name {
+            grid-row: name-s/name-e;
+            grid-column: register-s/register-e;
+        }
+
+        &__email {
+            grid-row: email-s/email-e;
+            grid-column: register-s/register-e;
+        }
+
+        &__password {
+            
+            grid-row: password-s/password-e;
+            grid-column: pass-s/pass-e;
+        }
+        
+        &__confirm {
+            
+            grid-row: confirm-s/confirm-e;
+            grid-column: create-s/create-e;
+            grid-column: pass-s/pass-e;
+        }
+
+        &__login {
+            
+            grid-row: buttons-s/buttons-e;
+            grid-column: pass-s/pass-e;
+            padding-left: 160px;
+
+            
+        }
+        &__back {
+
+            grid-row: buttons-s/buttons-e;
+
+            grid-column: pass-s/pass-e;
+        }
+    }
+    }
+
+}
+    
+    
+    @media (min-width: 1240px) {
+    .sign-up {
+    background-image: url(/photos/cycling.jpg);
+    background-position: center bottom 25%;
+    width: 100%;
+    top:0;
+    left: 0;
+    position: absolute;
+    background-size: cover;
+    display: block;
+    }
+}
+    
+    
+    @media (min-width: 1500px) {
+    .sign-up {
+    background-image: url(/photos/cycling.jpg);
+    background-position: center bottom 25%;
+    width: 100%;
+    top:0;
+    left: 0;
+    position: absolute;
+    background-size: cover;
+    display: block;
+    }
+}
+
+    
+    @media (min-width: 1760px) {
+    .sign-up {
+    background-image: url(/photos/cycling1240x821.jpg);
+    background-position: center center;
+    width: 100%;
+    top:0;
+    left: 0;
+    position: absolute;
+    background-size: cover;
+    display: block;
+    }
+}
+   

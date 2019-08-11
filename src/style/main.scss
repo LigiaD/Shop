@@ -1,0 +1,75 @@
+
+$background-color: white;
+$navbar-color: #00004d;
+$navbar-hover: #e6e6ff;
+$flip-back:  #e6e6e6;
+$plus-minus: #4d4dff;
+$button-color: #009999;
+$text-color:#009999;
+$main-font: 'Alfa Slab One', cursive;
+
+
+
+
+html {
+    font-size: 62.5%;
+}
+h1 {
+    font-size: 1rem;
+}
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+body {
+    font-family: "Noto Sans", sans-serif;
+    color: black;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    -webkit-tap-highlight-color: transparent;
+}
+
+@import 'layout';
+@import 'headernavbar';
+@import 'account-layout';
+@import 'account-headernavbar';
+@import 'auth/signin';
+@import 'auth/signup';
+
+@import 'pageTitle';
+@import 'form-fields';
+@import 'details';
+
+@import 'account/account';
+@import 'account/purchase-history';
+@import 'account/account-info';
+
+@import 'shop/shop';
+@import 'shop/shop-search-bar';
+@import 'shop/quantity';
+@import 'shop/green-price-tag';
+@import 'shop/shop-product';
+@import 'shop/shop-cart';
+@import 'shop/cart-product';
+
+@import 'order/review';
+@import 'order/reviewForm';
+@import 'order/reviewProduct';
+
+@import 'information/payment';
+@import 'information/shipping';
+@import 'information/infoHelp';
+@import 'information/thanksMessage';
+
+
+
+
+
+
