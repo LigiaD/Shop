@@ -24,7 +24,7 @@
 .shop-cart {
 
     &__toggle {
-        z-index: 6;
+        z-index: 18;
     }
     &__content {
         height: 675px;
@@ -147,7 +147,82 @@
     } 
 
     .cart-hidden {
-        // transform: translateX(520px);
         display: none;
     } 
+
+    @media (max-width: 500px) {
+
+        .shop-cart {
+
+            &__content {
+                height: 375px;
+                width: 220px;
+
+            }
+        }
+        .cart-footer {
+
+            height: 113px;
+            background-color: $navbar-color;
+        
+            display: grid;
+            grid-template-rows: [s] 1fr [e];
+            grid-template-columns: 10px [checkout-s] 1fr [checkout-e sub-s] 1fr [sub-e] 27px [price-s] 26px [price-e] 10px;
+            align-items: center;
+        
+            & > * {
+                grid-row: s/e;
+            }
+        
+        
+                &__checkout {
+                    grid-column: checkout-s/checkout-e; 
+        
+                    display: grid;
+                    justify-items: center;
+                    align-items: center;
+            
+                    height: 18px;
+                    width: 80px;
+                    border-radius: 20px;
+                    background-color: $navbar-hover;
+            
+                    color: $navbar-color;
+                    font-size: 1rem;
+                    font-weight: 600;
+            
+                    transition: all .3s ease;
+            
+                    &:hover {
+                        transform: scale(0.97);
+                    }
+            
+                    &:active {
+                        transform: scale(0.95);
+                    }
+            
+                    &:focus {
+                        outline: none;
+                    }
+                }
+        
+                &__subtotal {
+                    justify-self: end;
+                    grid-column: sub-s/sub-e; 
+                    font-size: 12px;
+                    color: $navbar-hover;
+                }
+            
+                &__price {
+                    justify-self: start;
+                    grid-column: price-s/price-e; 
+                    font-size: 14px;
+                    color: $navbar-hover;
+                    font-weight: 600;
+                }
+        
+            
+            } 
+
+    }
 
