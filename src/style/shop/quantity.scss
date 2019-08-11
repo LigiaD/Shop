@@ -37,6 +37,43 @@
     }
 } 
 
+@media (max-width: 920px) {
+
+    .quantity {
+        grid-template-rows: [s] 16px [m] 11px [e];
+        grid-template-columns: 5px [s] 56px [m] 19px [e];
+    
+        &__count,
+        &__plus,
+        &__minus {
+         
+           
+            width: 21px;
+ 
+        }
+    
+        &__count {
+
+            height: 32px;
+            width: 55px;
+   
+            font-size: 15px;
+      
+        }
+        &__plus {
+            font-size: 0.8rem;
+            height: 16px;
+        }
+        &__minus {
+    
+            font-size: 0.8rem;
+            height: 16px;
+        }
+
+    } 
+
+}
+
 
 
 

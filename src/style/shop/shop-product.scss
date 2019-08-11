@@ -143,3 +143,23 @@
         }
     }
 }
+
+@media (max-width: 920px ) {
+    .shop-product__back  {
+
+        grid-template-rows: 15px [title-s] 30px [title-e description-s] 1fr [description-e price-s] 25px [price-e q-s] 32.5px [q-e ] 5px [button-s] 32.5px [button-e] 15px; 
+        height: 400px;
+        &__quantity {
+            grid-row: q-s/q-e;
+        }
+        &__add-to-cart {
+            grid-row: button-s/button-e;
+            height: 30px;
+            width: 87px;
+            justify-self: start;
+            font-size: 10.5px;
+            
+
+        }
+    }
+}

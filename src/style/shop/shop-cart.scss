@@ -160,6 +160,11 @@
 
             }
         }
+        .cart-content {
+            &__title {
+                font-size: 1.7rem;
+            }
+        }
         .cart-footer {
 
             height: 113px;
@@ -167,7 +172,7 @@
         
             display: grid;
             grid-template-rows: [s] 1fr [e];
-            grid-template-columns: 10px [checkout-s] 1fr [checkout-e sub-s] 1fr [sub-e] 27px [price-s] 26px [price-e] 10px;
+            grid-template-columns: 10px [checkout-s] 1fr [checkout-e sub-s] 0.5fr [sub-e] 7px [price-s] 26px [price-e] 20px;
             align-items: center;
         
             & > * {
